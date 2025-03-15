@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  background-color: #fff;
+  font-family: Poppins;
+  margin-top: 3.2rem;
+}
+
+h1,
+h2 {
+  color: royalblue;
+  text-align: center;
+}
+
+h1 {
+  font-size: 3.2rem;
+  font-weight: 600;
+  margin-bottom: 2.4rem;
+}
+
+h2 {
+  margin: 2.4rem;
+  font-size: 2.4rem;
+}
+
+.input-section {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 2.4rem;
+}
+
+.label1,
+.label2,
+.label3 {
+  position: absolute;
+  top: 53%;
+  left: 1%;
+  color: #555;
+  background-color: #fff;
+  transition: top 0.3s ease;
+  cursor: text;
+  z-index: 9999;
+  font-size: 1.4rem;
+  padding: 0 5px 0 5px;
+}
+
+.label2 {
+  left: 31.7%;
+}
+
+.label3 {
+  left: 62%;
+}
+
+.toggle {
+  color: royalblue;
+  top: 19%;
+}
+
+input,
+select {
+  margin-top: 2.4rem;
+  height: 4.6rem;
+  width: 30rem;
+  font-size: 1.6rem;
+  padding: 1.2rem;
+  outline-color: royalblue;
+  border-radius: 6px;
+  border: 1px solid #888;
+  background-color: #fff;
+}
+
+#add-btn {
+  font-size: 1.6rem;
+  background-color: royalblue;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 1.2rem;
+  margin-bottom: 0.2rem;
+  cursor: pointer;
+}
+
+table {
+  width: 90rem;
+  border-collapse: collapse;
+  font-size: 1.8rem;
+}
+
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 0.8rem;
+  text-align: left;
+}
+
+th {
+  background-color: royalblue;
+  color: white;
+}
+
+thead th {
+  font-weight: 500;
+}
+
+tfoot td {
+  font-weight: bold;
+}
+
+.delete-btn {
+  padding: 5px 10px;
+  background-color: #f44336;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:active {
+  filter: brightness(90%);
+}
+
+input::-webkit-inner-spin-button {
+  display: none;
+}
