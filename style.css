@@ -4,6 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  user-select: none;
 }
 
 html {
@@ -126,7 +127,7 @@ thead th {
 }
 
 tfoot td {
-  font-weight: bold;
+  font-weight: 500;
 }
 
 .delete-btn {
