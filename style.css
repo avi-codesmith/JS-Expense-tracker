@@ -8,6 +8,8 @@
 
 html {
   font-size: 62.5%;
+  scrollbar-width: thin;
+  scrollbar-color: #1e96fc #fff;
 }
 
 body {
@@ -43,6 +45,7 @@ h2 {
   align-items: flex-end;
   justify-content: center;
   gap: 2.4rem;
+  scrollbar-width: thin;
 }
 
 .label1,
@@ -95,6 +98,8 @@ select {
   padding: 1.2rem;
   margin-bottom: 0.2rem;
   cursor: pointer;
+  height: auto;
+  width: auto;
 }
 
 table {
