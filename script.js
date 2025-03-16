@@ -20,6 +20,10 @@ inputs.forEach((input, index) => {
   });
 });
 
+category.addEventListener("input", () => {
+  category.value = category.value.replace(/[^A-Za-z]/g, "");
+});
+
 const addTd = () => {
   const selectedCategory = category.value;
   const amountValue = Number(amount.value);
