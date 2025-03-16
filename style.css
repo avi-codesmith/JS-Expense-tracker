@@ -159,5 +159,9 @@ input::-webkit-inner-spin-button {
 }
 
 #date-input {
+  position: relative;
+}
+
+#date-input::-webkit-calendar-picker-indicator {
   cursor: pointer;
 }
