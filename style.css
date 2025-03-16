@@ -165,3 +165,33 @@ input::-webkit-inner-spin-button {
 #date-input::-webkit-calendar-picker-indicator {
   cursor: pointer;
 }
+
+@media (max-width: 1024px) {
+  html {
+    font-size: 50%;
+  }
+  body {
+    margin: 20px;
+  }
+}
+
+@media (max-width: 852px) {
+  /* html {
+    font-size: 50%;
+  }
+  body {
+    margin: 20px;
+  } */
+  input {
+    width: 20rem;
+  }
+  .label3 {
+    left: 60%;
+  }
+}
+
+@media (max-width: 742px) {
+  table {
+    width: 60rem;
+  }
+}
