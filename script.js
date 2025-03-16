@@ -1,6 +1,9 @@
 "use strict";
 
 const labels = document.querySelectorAll("label");
+const l1 = document.querySelector(".label1");
+const l2 = document.querySelector(".label2");
+const l3 = document.querySelector(".label3");
 const inputs = document.querySelectorAll(".input");
 const amount = document.getElementById("amount-input");
 const date = document.getElementById("date-input");
@@ -33,8 +36,14 @@ const addTd = () => {
     inputs.forEach((input) => {
       sound.play();
       input.classList.add("move");
+      labels.forEach((label) => {
+        label.style.color = "red";
+      });
       setTimeout(() => {
         input.classList.remove("move");
+        labels.forEach((label) => {
+          label.style.color = "#555";
+        });
       }, 200);
     });
     return;
@@ -42,48 +51,66 @@ const addTd = () => {
     sound.play();
     amount.classList.add("move");
     category.classList.add("move");
+    l2.style.color = "red";
+    l1.style.color = "red";
     setTimeout(() => {
       amount.classList.remove("move");
       category.classList.remove("move");
+      l2.style.color = "#555";
+      l1.style.color = "#555";
     }, 200);
     return;
   } else if (!selectedCategory && !dateValue) {
     sound.play();
     category.classList.add("move");
     date.classList.add("move");
+    l1.style.color = "red";
+    l3.style.color = "red";
     setTimeout(() => {
       category.classList.remove("move");
       date.classList.remove("move");
+      l1.style.color = "#555";
+      l3.style.color = "#555";
     }, 200);
     return;
   } else if (!amountValue && !dateValue) {
     sound.play();
     date.classList.add("move");
     amount.classList.add("move");
+    l2.style.color = "red";
+    l3.style.color = "red";
     setTimeout(() => {
       date.classList.remove("move");
       amount.classList.remove("move");
+      l2.style.color = "#555";
+      l3.style.color = "#555";
     }, 200);
     return;
   } else if (!amountValue) {
     sound.play();
     amount.classList.add("move");
+    l2.style.color = "red";
     setTimeout(() => {
       amount.classList.remove("move");
+      l2.style.color = "#555";
     }, 200);
     return;
   } else if (!dateValue) {
     sound.play();
     date.classList.add("move");
+    l3.style.color = "red";
     setTimeout(() => {
       date.classList.remove("move");
+      l3.style.color = "#555";
     }, 200);
     return;
   } else if (!selectedCategory) {
     sound.play();
     category.classList.add("move");
+    l1.style.color = "red";
     setTimeout(() => {
       category.classList.remove("move");
+      l1.style.color = "#555";
     }, 200);
     return;
   }

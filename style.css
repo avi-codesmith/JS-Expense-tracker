@@ -149,10 +149,15 @@ input::-webkit-inner-spin-button {
 
 .move {
   animation: move 0.1s infinite;
+  border: 2px solid #f44336;
 }
 
 @keyframes move {
   0% {
     transform: translateX(10px);
   }
+}
+
+#date-input {
+  cursor: pointer;
 }
