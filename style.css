@@ -146,3 +146,13 @@ button:active {
 input::-webkit-inner-spin-button {
   display: none;
 }
+
+.move {
+  animation: move 0.1s infinite;
+}
+
+@keyframes move {
+  0% {
+    transform: translateX(10px);
+  }
+}
