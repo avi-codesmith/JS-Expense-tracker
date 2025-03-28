@@ -1,6 +1,7 @@
 "use strict";
 
 const labels = document.querySelectorAll("label");
+const logo = document.querySelector("h1");
 const l1 = document.querySelector(".label1");
 const l2 = document.querySelector(".label2");
 const l3 = document.querySelector(".label3");
@@ -13,6 +14,10 @@ const expensesTableBody = document.getElementById("expense-table-body");
 const totalCol = document.getElementById("total-amount");
 const sound = new Audio("errorSound.mp3");
 let totalAmount = 0;
+
+const reload = () => {
+  location.reload();
+};
 
 inputs.forEach((input, index) => {
   input.addEventListener("focus", () => {
@@ -152,3 +157,5 @@ document.addEventListener("keydown", (e) => {
     });
   }
 });
+
+logo.addEventListener("click", reload);

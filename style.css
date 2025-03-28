@@ -21,18 +21,37 @@ body {
   background-color: #fff;
   font-family: Poppins;
   margin-top: 3.2rem;
+  background-color: #fcfcfc;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+  margin-bottom: 4.2rem;
+  transition: all 0.3s ease;
+}
+
+.header:active {
+  scale: 0.9;
+}
+
+img {
+  height: 5.2rem;
+  width: 5.2rem;
 }
 
 h1,
 h2 {
-  color: royalblue;
+  color: #4169e1;
   text-align: center;
 }
 
 h1 {
   font-size: 3.2rem;
   font-weight: 600;
-  margin-bottom: 2.4rem;
+  cursor: pointer;
 }
 
 h2 {
